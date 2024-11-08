@@ -11,11 +11,27 @@ function func(){
     function printName(){
         console.log(username);
     }
-    printName() ;
+    return printName ;
 }
 
-func();
+let newfunc = func();
+newfunc();
 
+
+
+
+// REAL WORLD IMPLEMENTATION
+
+function ClickHandler(color){
+    
+      return function(){
+         document.body.style.backgroundColor = `${color}`;
+       }
+    
+}
+
+document.getElementById('orange').onclick = ClickHandler("orange");
+document.getElementById('green').onclick = ClickHandler("green");
 
 
 

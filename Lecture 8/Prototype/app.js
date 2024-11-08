@@ -1,0 +1,27 @@
+
+
+// PROTOTYPES
+
+// IF YOU  TRY TO ACCESS UNKNOW PROPERTY OF AN OBJECT,THEN JS WILL FIRSTLY FIND IT INSIDE AN OBJECT,
+// THEN , IF NOT FOUND , IT WILL GO TO ITS PROTOTPYE
+
+
+// PROTOTYPE - IT IS ALSO AN OBJECT, WHICH IS USED AS A FALLBACK SOURCE OF PROPERTIES
+
+// THIS CONCEPT IS CALLED INHERITENCE
+
+
+let todo  = {
+    title:"buy Flowers",
+    desc: function(){
+        return `your task is to ${this.title}`
+    }
+}
+
+console.log(todo.desc());
+console.log(todo.toString()); // BECAUSE OF PROTOTYPE
+
+
+// ARRAYS BEHINFD THE SEEN COVERTING HIMSLEF AS AN IBJECT , THAT'S WHY WE USE METHODS IN ARRAY;
+
+
